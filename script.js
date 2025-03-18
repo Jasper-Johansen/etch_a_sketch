@@ -17,12 +17,10 @@ for (let i=1; i<=16*16; i++){
 
 btn.addEventListener("click",()=>{
     let n = parseInt(prompt("Enter the number of rows and columns for the grid!"));
-    container.innerHTML = "";    /*Clears the container elements when the button is clicked"*/
+    console.log(`${n}`);
 
-    if(n>100 || n == 0 || n == ''){
-        alert("Please enter a number between 1 and 100");
-    }
-    else{
+    if(n>0 && n<100){
+        container.innerHTML = "";    /*Clears the container elements when the button is clicked"*/
         for (let j=1; j<=n*n; j++){
             const square = document.createElement("div");
             square.classList.add("square");
@@ -37,8 +35,10 @@ btn.addEventListener("click",()=>{
             });
             
         };
-
-    };
+    }
+    else{
+        alert("Please enter a number between 1 and 100");
+    }
    
 });
 
