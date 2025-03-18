@@ -1,8 +1,14 @@
-.container{
+body{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.square:hover {
-    background-color: rgb(${}, green, blue);
-}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height:550px;
+    align-items: center;
+  }
+  
+  
