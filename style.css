@@ -3,8 +3,11 @@
     box-sizing:border-box;
 }
 html{
-    height: 100%;
+    height: 100%; 
 }
+
+/*height of html and body set to 100%, because then only the align items on body works.
+Otherwise the height would be just the added height of the elements, and align items wont work.*/
 
 body{
     height:100%;
